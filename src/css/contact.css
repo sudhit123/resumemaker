@@ -1,0 +1,235 @@
+/* slider-start */
+.contact-main{
+    padding-top: 60px;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+.contact-main::before{
+    position: absolute;
+    content: "";
+    width: 474px;
+    height: 474px;
+    left: 1002px;
+    top: 62px;
+    background: rgba(133, 182, 255, 0.2);
+    filter: blur(187.5px);
+}
+.contact-main::after{
+    position: absolute;
+    content: "";
+    width: 429px;
+    height: 429px;
+    left: -81px;
+    top: 428px;
+    background: rgba(246, 202, 86, 0.2);
+    filter: blur(187.5px);
+}
+.slider-img{
+    background-image: url('../img/tempimgmain.jpg');
+    height: 244px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.slider-img::before{
+    position: absolute;
+    content: "";
+    top:0px;
+    right: 0px;
+    left:0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.slider-text{
+    padding-top: 80px;
+}
+.slider-text h3{
+    text-align: center;
+    color: white;
+}
+.contact-slider-text-color{
+    color:#FFC444;
+    position: relative;
+}
+.contact-slider-text-color::before{
+    position: absolute;
+}
+.slider-text h6{
+    padding: 5px;
+}
+.vector-text{
+    padding-top: 30px;
+}
+.vector-img{
+    padding: 3px;
+}
+/* slider-end */
+.question-section{
+    padding: 40px 0px;
+    color: white;
+}
+.question-text h1{
+    margin: 0px;
+    font-size: 50px;
+    text-align: center;
+    color:white
+}
+.question-text p{
+    padding: 10px 0px;
+    font-size:22px;
+    text-align: center;
+    color: white;
+}
+.social-media-icon{
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+.icon-size{
+    font-size: 30px;
+    color: white;
+    border: solid 1px white;
+}
+.email-icon a{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    /* border:solid 1px white; */
+    padding: 10px 17px;
+}
+.email-icon-border{
+    border: solid 1px #6047F9;
+    transform: rotate(-45deg);
+}
+.rotate{
+    display: inline-flex;
+}
+.icon{
+    transform: rotate(45deg);
+}
+.email-text p,.call-text p,.web-text p{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 40px;
+}
+.call-section,.e-mail-section,.web-section{
+    width: 150px;
+}
+.call-icon a{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 17px;
+}
+.call-icon-border{
+    border: solid 1px #FFC444;
+    transform: rotate(-45deg);
+}
+.web-icon a{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 17px;
+}
+.web-icon-border{
+    border: solid 1px #6047F9;
+    transform: rotate(-45deg);
+}
+.contact-form-section{
+    padding: 30px 0px;
+}
+.input-form-main-section{
+    text-align: center;
+    background: rgba(217, 217, 217, 0.1);
+    padding: 30px 10px;
+    border-radius: 24px;
+}
+.input-form-main-section input[type=text]{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(217, 217, 217, 0.2);
+}
+.input-form-main-section ::placeholder {
+    color:white;
+    font-size: 12px;
+}
+.input-section{
+  padding: 10px 0px;
+}
+.input-section textarea{
+  border-radius: 5px;
+  border: none;
+  padding: 7px 10px;
+  background: rgba(217, 217, 217, 0.2);
+}
+.send-massage-btn {
+  padding: 25px 0px;
+}
+.send-massage-btn a{
+  color: white;
+  background-color: #6047F9;
+  padding: 7px 15px;
+  font-size: 12px;
+  border: solid 1px #6047F9;
+  border-radius: 20px;
+  transition: all 600ms 0s;
+}
+.send-massage-btn a:hover{
+    background-color: transparent;
+    border: solid 1px #6047F9;
+    color: #6047F9;
+}
+.contact-img-section{
+    text-align: center;
+}
+.contact-img{
+    padding: 65px 70px;
+}
+.contact-img img{
+    width: 100%;
+}   
+@media (max-width:991px) {
+    .question-section h1{
+        font-size: 30px;
+    }
+    .question-text p{
+        font-size:16px;
+    }
+    
+}
+@media (max-width:500px) {
+    .call-section, .e-mail-section, .web-section{
+        width: 135px;
+    }
+    .email-text p, .call-text p, .web-text p{
+        font-size: 10px;
+    }
+    .question-section h1{
+        font-size: 25px;
+    }
+    .question-text p{
+        font-size: 11px;
+    }
+    .send-massage-btn a{
+        font-size: 8px;
+    }
+}
+@media (max-width:400px) {
+    .call-section, .e-mail-section, .web-section{
+        width: 102px;
+    }
+}
+@media(max-width:768px){
+    .contact-img{
+        padding: 50px 0px;
+    }
+}
+@media(min-width:992px) and (max-width:1200px){
+    .contact-img{
+        padding: 90px 70px;
+    }
+}

@@ -1,0 +1,765 @@
+*{
+    font-family:'Poppins';
+    text-decoration: none!important;
+}
+.flex{
+    display: flex;
+}
+.navbar{
+    background-color: #000000;
+    padding: 10px;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+} 
+.nav-link{
+    color: white;
+    transition: all 600ms 0s;   
+    font-family: 'Poppins';
+}
+.nav-link:hover{
+    color:#FFC444;
+    transition: all 600ms 0s;
+}
+.nav-link:focus,.nav-link:hover{
+    color: #F6CA56!important;
+}
+.login-button .nav-link{
+    margin: 0px 7px;
+}
+.sign-in .nav-link{
+    border: solid 1px #FFC444;
+    border-radius: 40px;
+    padding: 7px 20px!important;
+    transition: all 600ms 0s;
+}
+.sign-in .nav-link:hover{
+    background-color: #FFC444;
+    color:white;
+    transition: all 600ms 0s;
+}
+.navbar-toggler-icon{
+    background-color:white;
+}
+.navbar-link .nav-link{
+    position: relative;
+} 
+.navbar{
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #FFC444;
+
+}
+.navbar-link .nav-link::before{
+    position: absolute;
+    content: "";
+    right:0px;
+    bottom:0px;
+    width: 50%;
+    height: 1px;
+    left:0px;
+    top: 39px;
+    display: none;
+    background: linear-gradient(270deg, rgba(245, 201, 86, 0) 0%, #F6CA56 49.96%, rgba(255, 196, 68, 0) 104.26%);
+}
+.navbar-link .nav-link:hover::before{
+    width: 100%;
+    display: block;
+}
+.main{
+    background-color: #000000;
+    width:100%;
+    padding-top: 30px;
+
+}
+.slider{
+    padding-top: 100px;
+    position:relative;
+    overflow:hidden;
+
+}
+.slider-text{
+    color:white;
+    text-align: center;
+}
+.slider-text p{
+    font-size: 60px;
+    font-family: 'Poppins';
+}
+.slider-text-color{
+    color:#6047F9;
+    position:relative;
+}
+.slider-text-color::before{
+    position: absolute;
+    content:"";
+    background-image: url("./img/curve.png");
+    width: 100%;
+    left: 0px;
+    background-repeat: no-repeat;
+    top: 70px;
+    bottom: 0px;
+    
+}
+.slider-text-second {
+    text-align: center;
+}
+.slider-text-second p{
+    color: white;
+    font-size: 22px;
+}
+.create-resume{
+    padding-top: 20px;
+    text-align: center;
+}
+.create-resume a{
+    color: white;
+    background-color:#6047F9;
+    padding: 7px 15px;
+    font-size: 12px;
+    border:solid 1px #6047F9;
+    border-radius:20px;
+    transition: all 600ms 0s;
+}
+.create-resume a:hover{
+    background-color: transparent;
+    border:  1px solid #6047F9;
+    border-radius: 20px;
+    color: #6047F9;
+    transition: all 600ms 0s;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    width: 474px;
+    height: 474px;
+    left: 700px;
+    right:-25px;
+    top: 261px;
+    background: rgba(133, 182, 255, 0.3);
+    filter: blur(187.5px);
+}
+.slider::after{
+    position: absolute;
+    content:"";
+    width: 429px;
+    height: 429px;
+    left: -81px;
+    top: 428px;
+    background: rgba(246, 202, 86, 0.2);
+    filter: blur(187.5px);
+}
+.resume-detail{
+    margin-top: 130px;
+}
+.resume-image-background{
+    padding: 20px;
+    border-radius: 20px;
+    background-color:	rgb(128,128,128);
+}
+.resume-image  img{
+    border-radius: 10px;
+    width: 100%;
+}
+.resume-builder-title p{
+    font-size: 50px;
+    color: white;
+}
+.resume-builder-text p{
+    color: white;
+    font-size: 22px;
+}
+.resume-create-builder{
+    display: flex;
+    padding:10px 0px;
+}
+.create-resume-btn a{
+    color: white;
+    background-color:#6047F9;
+    padding: 7px 15px;
+    font-size: 12px;
+    border:solid 1px #6047F9;
+    border-radius:20px;
+    transition: all 600ms 0s;
+}
+.create-resume-btn a:hover{
+    background-color: transparent;
+    border:  1px solid #6047F9;
+    border-radius: 20px;
+    color: #6047F9;
+    transition: all 600ms 0s;
+}
+.resume-example-btn{
+    margin-left: 30px;
+}
+.resume-example-btn a{
+    color: white;
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    border:solid 1px #F6CA56;
+
+}
+.resume-example-btn a:hover{
+    background-color: #F6CA56;
+    color:white;
+    transition: all 600ms 0s;
+    border:solid 1px #F6CA56;
+}
+.resume-builder-main-section{
+    padding-top:100px ;
+    padding-bottom:100px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.resume-builder-main-section::before{
+    position: absolute;
+    content: "";
+    width: 474px;
+    right: -25px;
+    height: 474px;
+    left: 700px;
+    top:0px;
+    background: rgba(133, 182, 255, 0.3);
+    filter: blur(187.5px);
+} 
+.resume-builder-img{
+    position: relative;
+}
+.resume-builder-img img{
+    position: absolute;
+    animation: imges 4s infinite;
+    padding-left:115px;
+}
+
+@keyframes imges {
+    0%{
+        top:0px ;
+    }
+    50%{
+       top:20px;
+    }
+    100%{
+        top:0px;
+    }
+    
+}
+
+.pro-imges{
+    padding: 30px 5px;
+}
+.pro-imges img{  
+    width: 100%;
+}
+.professional-text-section{
+    padding-left: 150px;
+}
+.secure-job-title{
+    text-align: center;
+    color:#F6CA56;
+}
+.create-professional-text{
+    text-align: left;
+}
+.create-professional-text p{
+    font-size:50px;
+    color: white;
+}
+.cover-latter-pragraph p{
+    color:white;
+
+    font-size:18px;
+}
+.create-cover-latter-btn{
+    text-align: center;
+}
+.create-cover-latter-btn a{
+    color: white;
+    background-color: #F6CA56;
+    padding: 7px 15px;
+    font-size: 12px;
+    border:1px solid #F6CA56;  
+    border-radius: 20px;
+    border:solid 1px #F6CA56;
+    transition: all 600ms 0s;
+    display: inline-block;
+}
+.create-cover-latter-btn a:hover{
+        border-radius: 20px;
+        color:white;
+        border:1px solid #F6CA56;  
+        transition: all 600ms 0s;
+        background-color: transparent;
+}
+.professional--main-section{
+    padding:50px 0px ;
+    position: relative;
+}
+.professional--main-section::after{
+    position: absolute;
+    content: "";
+    width: 429px;
+    height: 429px;
+    left: -59px;
+    top: 20px;
+    background: rgba(246, 202, 86, 0.3);
+    filter: blur(187.5px);
+}
+.features-designed{
+    position: relative;
+    padding: 30px 0px;
+}
+.features-designed::before{
+    position: absolute;
+    content:"";
+    width: 474px;
+    height: 474px;
+    left: 800px;
+    top:20px;
+    background: rgba(133, 182, 255, 0.3);
+    filter: blur(187.5px);
+}
+.features-designed::after{
+        position: absolute;
+        content: "";
+        width: 474px;
+        height: 474px;
+        left: -265px;
+        top: 400px;
+
+        background: rgba(246, 202, 86, 0.2);
+        filter: blur(187.5px);
+}
+.features-designed h1{
+    color: white;
+    text-align: center;
+}
+.dream-job-box-main{
+    padding: 40px 0px;
+}
+.Box-main{
+    border-radius: 20px;
+    text-align: center;
+}
+.Box-main:hover{
+    box-shadow: 0px 0px 15px white;
+}
+.blue-color{
+    color:#6047F9;
+}
+.yellow-color{
+    color:#F6CA56;
+}
+.blue-color-border{
+    border: solid 1px #6047F9;
+    
+}
+.yellow-color-border{
+    border:solid 1px #F6CA56
+}
+.box-image-top{
+    padding: 20px;
+    text-align: center;    
+}
+.box-background-color-blue{
+    width: 135px;
+    height: 135px;
+    line-height: 135px;
+    background-color:#6047F9;
+    border-radius: 100%;
+    margin: auto;
+}
+.box-background-color-yellow{
+    width: 135px;
+    height: 135px;
+    line-height: 135px;
+    background-color: #F6CA56;
+    border-radius: 100%;
+    margin: auto;
+}
+.box-title h4{
+    font-size: 22px;
+    height: 45px;
+}
+.box-pragraph p{
+    color: white;
+    font-size: 15px;
+    height: 90px;
+    padding: 5px 20px;
+}
+.resume-job-market-title p{
+    color: white;
+    font-size:50px
+}
+.perfect-resume-section{
+    padding: 20px 0px;
+}
+.perfect-resume-pragraph p{
+    color: white;
+}
+.perfect-resume-pragraph p{
+    font-size: 22px;
+}
+.perfecr-resume-img-section img{
+    width: 100%;
+}
+.step-box-main{
+    padding: 50px 0px;
+    
+}
+.step-box-section{
+    border:solid 1px #6047F9;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;  
+}
+
+.step-box-section:hover{
+    box-shadow: 0px 0px 10px white;
+    }
+/* .step-box-section::after{
+    position: absolute;
+    content: "";
+    top:100%;
+    right: 0px;
+    left: 0px;
+    bottom:0px;
+    transition: all 600ms 0s;
+}
+.step-box-section:hover::after{
+    top:0%;
+    background-color: #6047F9;
+    transition:all 600ms 0s ;
+} */
+.step-title h6{
+    border-top:solid 8px #6047F9;
+    border-radius: 10px;
+    padding: 20px 5px 10px 10px;
+    color: white;
+}
+.step-box-section:hover .step-title{
+    color: white!important;
+} 
+.step-class{
+    text-align: center;
+}
+.step-class h6{
+    padding: 5px;
+    color: #6047F9;
+}
+.step-pragrah p{
+    padding:10px ;
+    text-align: justify;
+    color: white;
+}
+.footer-main{
+    border-top: solid 1px #F6CA56;
+    padding: 20px 0px;
+    background-color: #000000;
+}
+.contact-us-main{
+    text-align: center;
+}
+.contact-us h5{
+    color:#6047F9;
+}
+.flex{
+    display: flex;
+}
+.contact-us h5{
+    text-align: left;
+}
+.contact-us-icon{
+    text-align: left;
+}
+.contact-us-icon ul{
+    padding-left: 0px;
+    display: flex;
+    justify-content: left;
+
+}
+.contact-us-icon li {
+list-style: none;
+padding: 5px 10px;
+color: white;
+}
+.contact-us-icon li:hover{
+    color: #F6CA56;
+    cursor: pointer;
+    transition: all 600ms 0s;
+}
+
+.quick-link-title h5{
+    color:#6047F9;
+
+}
+.quick-link-link ul{
+    padding: 0px;
+}
+.quick-link-link li{
+    text-align: left;
+    padding: 5px 0px;
+    color: white;
+    list-style: none;
+    transition: all 600ms 0s;
+
+}
+.quick-link-link li:hover{
+    color:#F6CA56;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.learn-title h5{
+    color:#6047F9;
+}
+.learn-link ul{
+    padding: 0px;
+}
+.learn-link li{
+    list-style: none;
+    color: white;
+    padding: 5px 0px;
+    transition: all 600ms 0s;
+
+}
+.learn-link li:hover{
+    color: #F6CA56;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.other-title h5{
+    color:#6047F9;
+}
+.other-link ul{
+    padding: 0px;
+}
+.other-link li{
+    list-style: none;
+    color:white;
+    padding: 5px 0px;
+    transition: all 600ms 0s;
+}
+.other-link li:hover{
+    color: #F6CA56;
+    margin-left: 3px;
+    cursor: pointer;
+
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .slider-text p{
+        font-size: 44px;
+    }
+    .slider-text-second p{
+        font-size: 18px;
+    }
+    .mrg-top-second-image{
+        margin-top: 20px;
+    }
+    .slider-text-color::before{
+        height: 30px;
+        top:50px;
+    }
+    .resume-builder-main-section{
+        padding-bottom: 500px;
+    }
+    .pro-imges{
+        text-align: center;
+    }
+    .pro-imges img{
+        width:400px;
+    }
+    .resume-builder-img img{
+        padding-left: 150px;
+    }
+    .professional-text-section{
+        padding-left: 0px;
+    }
+    .create-professional-text p{
+        font-size: 40px;
+    }
+    .professional--main-section{
+        padding: 0px;
+    }
+    .resume-job-market-title p{
+        font-size: 40px;
+    }
+    .perfect-resume-pragraph p{
+        font-size: 18px;
+    }
+    .perfecr-resume-img-section{
+        text-align: center;
+    }
+    .perfecr-resume-img-section img{
+        width: 400px;
+    }
+    .sign-in .nav-link{
+        width: 14%;
+        text-align: center;
+    }
+    .slider{
+        padding-top: 40px;
+    }
+}
+@media(max-width:768px) {
+    .slider{
+        padding-top: 40px;
+    }
+    .slider-text p{
+        font-size: 40px;
+    }
+    .slider-text-second p{
+        font-size: 16px;
+    }
+    .slider-text-color::before{
+        height: 30px;
+        top:50px;
+    }
+    .resume-builder-title p{
+        font-size: 40px;
+    }
+    .resume-builder-text p{
+        font-size: 18px;
+    }
+    .professional--main-section{
+        padding: 0px;
+    }
+    .resume-builder-main-section{
+        padding-bottom: 500px;
+    }
+    .pro-imges{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .professional-text-section {
+        padding-bottom: 20px;
+    }
+   .pro-imges img{
+        width: 400px;
+    }
+    .professional-text-section{
+        padding-left: 0px;
+    }
+    .create-professional-text p{
+        font-size: 40px;
+    }
+    .features-designed h1{
+        font-size:30px;
+    }
+    .resume-job-market-title p{
+        font-size:40px;
+    }
+    .perfect-resume-pragraph p{
+        font-size:18px;
+    }
+    .perfecr-resume-img-section{
+        text-align: center;
+    }
+    .perfecr-resume-img-section img{
+        width: 400px;
+    }
+    .step-box-section{
+        height: 300px;
+    }
+    .sign-in .nav-link{
+        width: 22%;
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .slider-text p{
+        font-size: 25px;
+    }
+    .slider-text-second p{
+        font-size: 11px;
+    }
+    .create-resume a{
+        font-size:8px;
+    }
+    .resume-detail{
+        margin-top: 90px;
+    }
+    .slider-text-color::before{
+        height: 30px;
+        top:30px;    
+    }
+    .resume-example-btn a{
+        font-size: 8px;
+    }
+    .create-resume-btn a{
+        font-size:8px;
+    }
+    .resume-builder-img img{
+        padding-left: 50px;
+        height: 300px;
+    }
+    .resume-builder-title p{
+        font-size:30px;
+    }
+    .resume-builder-text p{
+        font-size: 15px;
+    }
+    .resume-builder-main-section{
+        padding-bottom:350px;
+    }
+    .pro-imges img{
+        width:270px;
+    }
+    .create-professional-text p{
+        font-size: 27px;
+    }
+    .cover-latter-pragraph p{
+        font-size:15px;
+    }
+    .create-cover-latter-btn a{
+        font-size:10px;
+    }
+    .features-designed h1{
+        font-size: 18px;
+    }
+    .resume-job-market-title p{
+        font-size: 30px;
+    }
+    .perfect-resume-pragraph p{
+        font-size: 15px;
+    }
+    .perfecr-resume-img-section img{
+        width: 270px;
+    }
+    .step-box-section{
+        height: 355px;
+    }
+    .sign-in .nav-link{
+        width: 35%;
+        text-align: center;
+    }
+}
+@media(max-width:767px){
+    .mrg-top-first-image,.mrg-top-second-image{
+        margin-top: 20px;
+    }
+    
+}
+@media(min-width:992px) and (max-width:1200px) {
+    .resume-builder-img{
+        top:-50px;
+    }
+    .resume-builder-img img{
+        height: 400px;
+    }
+    .create-professional-text p {
+        font-size: 30px;
+    }
+    .resume-builder-title p{
+        font-size: 30px;
+    }
+    .resume-job-market-title p{
+        font-size: 30px;
+    }
+    .perfect-resume-pragraph p{
+        font-size: 18px;
+    }
+}
